@@ -9,6 +9,8 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 >ANDROID_HOME Variable Value in my case: C:\Users\AL76304\AppData\Local\Android\Sdk
 >ANDROID_SDK_ROOT Variable Value in my case: C:\Users\AL76304\AppData\Local\Android\Sdk
 >Path Values ---------------------
+>
+>
 >C:\Program Files\OpenJDK\17.0.3\bin    
 >C:\Users\AL76304\AppData\Local\Android\Sdk
 >C:\Users\AL76304\AppData\Local\Android\Sdk\platform-tools
