@@ -12,9 +12,11 @@ import Intro from "./src/screens/Intro";
 import ProductListingScreen from './src/screens/ProductListingScreen';
 import ProductsSearch from './src/screens/ProductsSearch';
 import ProviderSearch from "./src/screens/ProviderSearch";
+import ProviderSearchResults from "./src/screens/ProviderSearchResults";
 import Search from './src/screens/Search';
+import SelectCounselor from "./src/screens/SelectCounselor";
+import SignUpScreen from "./src/screens/SignUpScreen";
 import WelcomeScreen from "./src/screens/WelcomeScreen";
-
 
 
 const App = () => {
@@ -24,9 +26,9 @@ const App = () => {
         <UserProvider value={{ user, setUser }}>
             <NavigationContainer>
 
-                <Stack.Navigator initialRouteName="Provider">
+                <Stack.Navigator initialRouteName="SignUp">
                     <Stack.Screen name="Carelon" component={Carelon} />
-                    <Stack.Screen name="Search" component={Search} />
+                    <Stack.Screen name="Search" component={Search} options={{headerShown:false}} />
                     <Stack.Screen name="Products" component={ProductListingScreen} />
                     <Stack.Screen name='ProductsSearch' component={ProductsSearch} />
                     <Stack.Screen name="Home" component={HomeScreen} />
@@ -36,6 +38,9 @@ const App = () => {
                     <Stack.Screen name="Intro" component={Intro} />
                     <Stack.Screen name="CarelonHeader" component={CarelonHeader} options={{ headerShown: false }} />
                     <Stack.Screen name="Provider" component={ProviderSearch} options={{ headerShown: false }} />
+                    <Stack.Screen name="SearchResults" component={ProviderSearchResults} options={{ headerShown: false }}/>
+                    <Stack.Screen name="SelectCounselor" component={SelectCounselor} options={{headerShown:false}} />
+                    <Stack.Screen name="SignUp" component={SignUpScreen} options={{headerShown:false}} />
 
 
                 </Stack.Navigator>

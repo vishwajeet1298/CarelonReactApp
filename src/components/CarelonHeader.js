@@ -11,20 +11,26 @@ const CarelonHeader = () => {
     return (
         <View style={styles.container}>
             <View style={styles.headerView}>
+                <View style={styles.logoContainer}>
                 <Image
                     style={styles.logoStyle}
                     source={require('../../assets/logo.png')}
                     testID="logo"
                 />
+                </View>
+                
                 <View style={styles.sideOps}>
                     <TouchableOpacity style={styles.loginButton} testID="loginButton">
                         <Text style={styles.loginText}>Log In</Text>
                     </TouchableOpacity>
+                    <TouchableOpacity>
                     <Image
                         style={styles.iconStyle}
                         source={require('../../assets/icons/Search.png')}
                         testID="searchIcon"
                     />
+                    </TouchableOpacity>
+                    
                 </View>
             </View>
             <TouchableOpacity style={styles.assistanceButton} onPress={toggleModal} testID="assistanceButton">
@@ -76,19 +82,21 @@ const styles = StyleSheet.create({
     },
     headerView: {
         flexDirection: "row",
-        justifyContent: "center",
         alignItems: "center",
+        paddingHorizontal:15,
         height: 60,
-
+    },
+    logoContainer:{
+        flex: 3,
+        alignItems: 'flex-end',
     },
     logoStyle: {
-
         resizeMode: 'contain',
     },
     sideOps: {
+        flex:1,
         flexDirection: "row",
         alignItems: "center",
-
     },
     loginButton: {
         marginRight: 10,

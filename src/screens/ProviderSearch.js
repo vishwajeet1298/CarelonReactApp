@@ -52,8 +52,6 @@ const ProviderSearch = () => {
                             break;
                         default:
                             return null;
-
-                            
                     }
                     return (
                         <Image

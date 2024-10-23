@@ -2,7 +2,6 @@ import React from 'react';
 import { Image, KeyboardAvoidingView, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import SearchCarelon from '../components/SearchCarelon';
 
-
 const HeroText = ({ text, style }) => <Text style={style}>{text}</Text>;
 
 const DescriptionText = ({ text, style }) => <Text style={style}>{text}</Text>;
@@ -21,33 +20,24 @@ const Search = () => {
                 <DescriptionText text="Carelon Wellbeing is confidential and available to you and members of your household at no cost." style={styles.description2} />
                 </View>
             <View style={styles.imgView}>
-                {/* <ImageBackground
-                    source={require('../../assets/images/parentwithchild.jpg')}
-                    style={styles.imgStyle}
-                /> */}
+                
                 <Image
                 source={require('../../assets/images/parentwithchild.jpg')}
                 style={styles.imgStyle}
                 />
                 
                 <View style={styles.searchBarContainer}>
-
-                    <SearchCarelon 
-                        
-                    />
+                    <SearchCarelon />
                 </View>
-                
-                
-                
             </View>
-            <View style={styles.signInView}>
+        </View>
+        <View style={styles.signInView}>
                 <Text>{"Already have an account? "}</Text>
                 <TouchableOpacity onPress={() => { }}>
                     <Text style={{ color: '#794CFF', textDecorationLine: 'underline', }}>
                         {"Sign in"}
                     </Text>
                 </TouchableOpacity>
-            </View>
         </View>
         </KeyboardAvoidingView>
     )
@@ -56,22 +46,19 @@ const Search = () => {
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        // justifyContent:'center',
-        justifyContent:'flex-end',
-
+        justifyContent:'center',
+        // backgroundColor:'yellow',
     },
     mainScreen: {
-        // flex:1,
-        
-        marginHorizontal:20,
-
+        // backgroundColor:'red',
+        marginHorizontal:10,
     },
     hero: {
         backgroundColor: '#f3f3f3',
         // height: 100,
         justifyContent: 'center',
         // alignItems: 'flex-start',
-        lineHeight: 24,
+        marginHorizontal:10,
     },
     heroText:
     {
@@ -83,13 +70,12 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         color: "#5009B5",
-    
     },
     viewContent: {
         backgroundColor: '#f3f3f3',
         // height: 100,
         alignItems: 'flex-start',
-        lineHeight: 24,
+        marginHorizontal:10,
     },
     description: {
         fontSize: 14,
@@ -98,7 +84,6 @@ const styles = StyleSheet.create({
         marginTop: 30,
         marginBottom: 20,
         fontFamily:'OpenSans-Medium',
-        
     },
     description2: {
         fontSize: 14,
@@ -114,9 +99,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: 'black',
         borderRadius: 24,
-        marginHorizontal:10,
-        
-        
+        marginHorizontal:10, 
     },
     imgStyle: {
         width: '100%',
@@ -127,17 +110,15 @@ const styles = StyleSheet.create({
     signInView: {
         flexDirection: 'row',
         marginTop: 10,
-        marginBottom: 20,
+        marginBottom: 0,
         justifyContent: 'center',
+        // backgroundColor:'red',
     },
     searchBarContainer: {
         position: 'absolute', 
         top: 180, 
         padding:5,
     },
-
-
-
 });
 
 export default Search;
