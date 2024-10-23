@@ -46,10 +46,7 @@ yarn start
 ## Step 2: Start your Application
 When the Metro Bundler starts in the terminal, 
 Follow the steps/guide of metro bundler
-            Press a - to open in Android
-            Press i - to open in iOS
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Ignore this: Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
 ### For Android
 
@@ -57,12 +54,10 @@ Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _roo
 # using npm
 npm run android
 # Press a - to open in Android
-# Press i - to open in iOS
 
 # OR using Yarn
 yarn android
 # Press a - to open in Android
-# Press i - to open in iOS
 ```
 
 ### For iOS
@@ -70,12 +65,10 @@ yarn android
 ```bash
 # using npm
 npm run ios
-# Press a - to open in Android
 # Press i - to open in iOS
 
 # OR using Yarn
 yarn ios
-# Press a - to open in Android
 # Press i - to open in iOS
 ```
 
