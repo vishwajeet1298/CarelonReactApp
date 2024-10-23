@@ -5,12 +5,12 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-# JAVA_HOME Variable Value 
-      in my case: C:\Program Files\OpenJDK\17.0.3
-# ANDROID_HOME Variable Value 
-      in my case: C:\Users\AL76304\AppData\Local\Android\Sdk
-# ANDROID_SDK_ROOT Variable Value 
-      in my case: C:\Users\AL76304\AppData\Local\Android\Sdk
+# JAVA_HOME Variable Value (in my case):
+C:\Program Files\OpenJDK\17.0.3
+# ANDROID_HOME Variable Value (in my case): 
+C:\Users\AL76304\AppData\Local\Android\Sdk
+# ANDROID_SDK_ROOT Variable Value (in my case):
+C:\Users\AL76304\AppData\Local\Android\Sdk
 
 
 # ---------------------------Add Path Values ---------------------
