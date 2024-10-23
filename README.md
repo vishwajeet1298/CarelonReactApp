@@ -56,13 +56,13 @@ Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _roo
 ```bash
 # using npm
 npm run android
-Press a - to open in Android
-Press i - to open in iOS
+# Press a - to open in Android
+# Press i - to open in iOS
 
 # OR using Yarn
 yarn android
-Press a - to open in Android
-Press i - to open in iOS
+# Press a - to open in Android
+# Press i - to open in iOS
 ```
 
 ### For iOS
@@ -70,13 +70,13 @@ Press i - to open in iOS
 ```bash
 # using npm
 npm run ios
-Press a - to open in Android
-Press i - to open in iOS
+# Press a - to open in Android
+# Press i - to open in iOS
 
 # OR using Yarn
 yarn ios
-Press a - to open in Android
-Press i - to open in iOS
+# Press a - to open in Android
+# Press i - to open in iOS
 ```
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
