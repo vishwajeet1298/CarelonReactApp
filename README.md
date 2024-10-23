@@ -14,8 +14,9 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 
 # ---------------------------Add Path Values ---------------------
-
-            C:\Program Files\OpenJDK\17.0.3\bin <br>
+# 
+            C:\Program Files\OpenJDK\17.0.3\bin
+# 
             C:\Users\AL76304\AppData\Local\Android\Sdk
             C:\Users\AL76304\AppData\Local\Android\Sdk\platform-tools
             C:\Users\AL76304\AppData\Local\Android\Sdk\emulator
