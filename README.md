@@ -13,15 +13,20 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
       C:\Users\AL76304\AppData\Local\Android\Sdk
 
 
-# ---------------------------Add Path Values ---------------------
+# --------------------------- Add Path Values (in my Case) It varies v=from system to system usernames---------------------
 # 
             C:\Program Files\OpenJDK\17.0.3\bin
 # 
             C:\Users\AL76304\AppData\Local\Android\Sdk
+# 
             C:\Users\AL76304\AppData\Local\Android\Sdk\platform-tools
+# 
             C:\Users\AL76304\AppData\Local\Android\Sdk\emulator
+# 
             C:\Users\AL76304\AppData\Local\Android\Sdk\tools
+# 
             C:\Users\AL76304\AppData\Local\Android\Sdk\tools\bin
+# 
 
 
 ## Step 1: Start the Metro Server
