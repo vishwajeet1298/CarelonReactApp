@@ -13,7 +13,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
       C:\Users\AL76304\AppData\Local\Android\Sdk
 
 
-# --------------------------- Add Path Values (in my Case) It varies v=from system to system usernames---------------------
+# -----Add Path Values. It varies from Usernames and Folder Path in your Systems -----
 # 
             C:\Program Files\OpenJDK\17.0.3\bin
 # 
