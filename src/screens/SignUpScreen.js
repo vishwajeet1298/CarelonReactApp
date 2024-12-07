@@ -5,9 +5,7 @@ import { Dropdown } from 'react-native-element-dropdown';
 import { TextInput } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-
-
-const SignUpScreen = () => {
+const SignUpScreen = (props) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [date, setDate] = useState(null);
@@ -21,7 +19,7 @@ const SignUpScreen = () => {
     const [zipCode, setZipCode] = useState('');
 
 
-    const genderOptions = useMemo(()=>[
+    const genderOptions = useMemo(() => [
         {
             label: 'Male', value: 'male'
         },
@@ -31,14 +29,14 @@ const SignUpScreen = () => {
         {
             label: "Other", value: 'other'
         },
-    ],[]);
-    const relationshipOptions=useMemo(()=>[
-        {label:'Single', value:'single'},
-        {label:'Married', value:'married'},
-        {label:'Widowed',value:'widowed'},
-        {label:'Divorced', value:'divorced'},
-        {label:'Separated', value:'separated'}
-    ],[]);
+    ], []);
+    const relationshipOptions = useMemo(() => [
+        { label: 'Single', value: 'single' },
+        { label: 'Married', value: 'married' },
+        { label: 'Widowed', value: 'widowed' },
+        { label: 'Divorced', value: 'divorced' },
+        { label: 'Separated', value: 'separated' }
+    ], []);
 
     const onChange = (event, selectedDate) => {
         if (event.type === 'dismissed') {
@@ -49,7 +47,7 @@ const SignUpScreen = () => {
         setShow(false);
         setDate(currentDate);
     };
-    
+
     const showDatePicker = () => {
         setShow(true);
     };
@@ -68,7 +66,7 @@ const SignUpScreen = () => {
         return `${day}/${month}/${year}`;
     };
     const isFormValid = () => {
-        return firstName.trim() !== '' && lastName.trim() !== '' && date != null && zipCode.trim().length===6 && /^[0-9]+$/.test(zipCode);
+        return firstName.trim() !== '' && lastName.trim() !== '' && date != null && zipCode.trim().length === 6 && /^[0-9]+$/.test(zipCode);
     }
     const validateAlphabetic = (text) => {
         return text.replace(/[^a-zA-Z]/g, '');
@@ -139,7 +137,11 @@ const SignUpScreen = () => {
                         <Text >Please add your personal details below.</Text>
                         <View style={styles.signinView}>
                             <Text>Already have an account? </Text>
-                            <TouchableOpacity onPress={() => { }}>
+                            <TouchableOpacity
+                                onPress={() => {
+                                    console.log('Navigating to Carelon');
+                                    props.navigation.navigate('Carelon');
+                                }}>
                                 <Text style={styles.signInText}>Sign in</Text>
                             </TouchableOpacity>
                         </View>
@@ -192,8 +194,8 @@ const SignUpScreen = () => {
                         />
                     </View>
                     <View style={styles.formView}>
-                        <Label text="Relationship status" />    
-                           <Dropdown
+                        <Label text="Relationship status" />
+                        <Dropdown
                             style={styles.dropdown}
                             data={relationshipOptions}
                             labelField="label"
@@ -202,7 +204,7 @@ const SignUpScreen = () => {
                             value={relationshipStatus}
                             onChange={item => setRelationshipStatus(item.value)}
                             renderItem={renderRelationshipStatusItem} />
-                            
+
                     </View>
                     <View style={styles.formView}>
                         <Label text="Address line 1" />
@@ -216,7 +218,7 @@ const SignUpScreen = () => {
                         <TextInput style={styles.formInputStyle}
                             placeholder='Address'
                             value={address2}
-                            onChangeText={(text)=>setAddress2(validateAlphanumeric(text))}></TextInput>
+                            onChangeText={(text) => setAddress2(validateAlphanumeric(text))}></TextInput>
                     </View>
                     <View style={styles.formView}>
                         <Label text="State" />
@@ -287,7 +289,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 8,
         padding: 10,
-        
+
     },
     datePickerContainer: {
         flexDirection: 'row',
@@ -303,7 +305,7 @@ const styles = StyleSheet.create({
     },
     iconContainer: {
         marginLeft: 10,
-       
+
     },
     dropdown: {
         borderColor: "#999999",
