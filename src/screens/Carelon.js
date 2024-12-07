@@ -143,7 +143,7 @@ const Carelon = (props) => {
                 style={styles.passButton}
                 onPress={() => {
                     // Pass params back to home screen
-                    navigation.navigate('Home', { user: { username, password } });
+                    props.navigation.navigate('Home', { user: { username, password } });
                   }}
             >
                 <Text style={styles.buttonText}>Pass</Text>
